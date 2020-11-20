@@ -17,4 +17,4 @@ randomAdvice();
 
 let adviceResponse = document.getElementById('response-advice');
 let mainButton = document.getElementById('main-button');
-mainButton = addEventListener('click', randomAdvice);
+mainButton.addEventListener('click', randomAdvice);

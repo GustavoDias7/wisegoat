@@ -4,7 +4,7 @@ function printAdvice(data) {
 
 function randomImage() {
     let randomNum = Math.floor(Math.random() * 5) + 1;
-    imageResponse.src = `/assets/goat-0${randomNum}.jpg`;
+    imageResponse.src = `../assets/goat-0${randomNum}.jpg`;
 };
 
 function randomAdvice() {

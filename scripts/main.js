@@ -2,11 +2,6 @@ function printAdvice(data) {
     adviceResponse.innerText = data.slip.advice;
 };
 
-function randomImage() {
-    let randomNum = Math.floor(Math.random() * 5) + 1;
-    imageResponse.src = `../assets/goat-0${randomNum}.jpg`;
-};
-
 function randomAdvice() {
     let endpoint = 'https://api.adviceslip.com/advice';
     fetch(endpoint) //send our request which returns a promise
@@ -16,16 +11,10 @@ function randomAdvice() {
         .then((data => {
             printAdvice(data);
         }));
-}
+};
 
-function randomAll() {
-    randomAdvice();
-    randomImage();
-}
+randomAdvice();
 
-const adviceResponse = document.getElementById('response-advice');
-const imageResponse = document.getElementById('response-image');
+let adviceResponse = document.getElementById('response-advice');
 let mainButton = document.getElementById('main-button');
-
-randomAll();
-mainButton = addEventListener('click', randomAll);
+mainButton = addEventListener('click', randomAdvice);

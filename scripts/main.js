@@ -25,8 +25,7 @@ function randomAll() {
 
 const adviceResponse = document.getElementById('response-advice');
 const imageResponse = document.getElementById('response-image');
-const mainButton = document.getElementById('main-button');
+let mainButton = document.getElementById('main-button');
 
-randomAdvice();
-randomImage();
+randomAll();
 mainButton = addEventListener('click', randomAll);

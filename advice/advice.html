@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link ref="stylesheet" href="/styles/style.css">
-    <title>Your Advice</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/advice-style.css">
     <script src="/scripts/main.js" defer></script>
+    <title>Your Advice</title>
 </head>
 <body>
-    <section class="container">
-        <h1 id="response-advice">Load Wise...</h1>
-        <img id="response-image" src="" alt="Bodezinho">
+    <section class="main-section">
+        <button class="main-button">New advice</button>
+
+        <section class="child-section" id="child-section-01">
+            <P id="response-advice">Loading advice...</P>
+        </section>
+
+        <section class="child-section" id="child-section-02">
+            <img id="response-image" src="/assets/loading.png" alt="Bodezinho">
+        </section>
     </section>
 </body>
 </html>

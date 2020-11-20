@@ -33,7 +33,9 @@ body {
 /* TEXT-DESIGN */
 
 p {
+    font-size: 20px;
     font-weight: 700;
+    color: #72005F;
 }
 
 #response-advice {
@@ -48,13 +50,12 @@ p {
 }
 
 /* MAIN-BOTTOM */
-.main-button {
+#main-button {
     position: absolute;
-    bottom: 0px;
+    bottom: -55px;
     right: 0;
-    top: -55px;
     left: 0;
-    margin: 0 auto;
+    margin: auto;
 
     width: 180px;
     height: 40px;
@@ -67,7 +68,7 @@ p {
     outline: none;
 }
 
-.main-button:hover {
+#main-button:hover {
     background-color: #530045;
     cursor: pointer;
 }
